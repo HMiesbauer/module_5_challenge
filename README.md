@@ -3,6 +3,19 @@ Compare the performance of Pymaceuticals’ drug of interest, Capomulin, against
 Generate all of the tables and figures needed for the technical report of the clinical study. Write at least three observations or inferences that can be made from the data.
 
 Code sources
+
+# Use groupby and summary statistical methods to calculate the following properties of each drug regimen: 
+# mean, median, variance, standard deviation, and SEM of the tumor volume. (ChatGPT, personal communication, January 19, 2023)
+
+sem_tumor = drop_duplicate_mice.groupby('Drug Regimen')['Tumor Volume (mm3)'].sem()
+variance_tumor = drop_duplicate_mice.groupby('Drug Regimen')['Tumor Volume (mm3)'].var()
+std_deviation_tumor = drop_duplicate_mice.groupby('Drug Regimen')['Tumor Volume (mm3)'].std()
+
+statistics_table['Tumor Volume Std. Error'] = sem_tumor
+statistics_table['Tumor Volume Variance'] = variance_tumor
+statistics_table['Tumor Volumen Std. Dev'] = std_deviation_tumor
+
+
 ##Quartiles, Outliers and Boxplots
 chatgpt 
 # Calculate the final tumor volume of each mouse across four of the treatment regimens: (ChatGPT, personal communication, January 23, 2024)
