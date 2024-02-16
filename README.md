@@ -2,6 +2,11 @@ Module 5 Challenge Assignment Instructions here
 Compare the performance of Pymaceuticals’ drug of interest, Capomulin, against the other treatment regimens.
 Generate all of the tables and figures needed for the technical report of the clinical study. Write at least three observations or inferences that can be made from the data.
 
+2/15/24:
+Corrected summary statistics tables
+Correct bar graphs
+
+
 Code sources
 
 # Use groupby and summary statistical methods to calculate the following properties of each drug regimen: 
